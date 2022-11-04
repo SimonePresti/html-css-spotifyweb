@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex {
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: black;
+    width: 230px;
+    height: calc(100vh - 100px);
+    
+}
+
+main {
+    width: calc(100% - 230px);
+    background-color: #141922;
+}
+
+footer {
+    background-color: #242424;
+    height: 100px;
+    width: 100%;
+}
