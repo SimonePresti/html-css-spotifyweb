@@ -27,32 +27,75 @@ header {
 }
 
 div.logo {
-    border: 1px solid white;
     width: 100%;
     height: 80px;
     align-items: center;
 }
 
 div.home {
-    border: 1px solid white;
     width: 100%;
     height: 120px;
     align-items: center;
 }
 
 div.playlist {
-    border: 1px solid white;
     width: 100%;
     height: 220px;
     align-items: center;
+    margin-left: 1rem;
 }
 
 div.account-name {
-    border: 1px solid white;
     width: 100%;
-    height: 80px;
     align-items: center;
-    margin-top: 8.75rem;
+    margin-top: 9rem;
+    margin-left: 1rem;
+}
+
+#big-logo {
+    width: 60%;
+    margin-left: 1rem
+}
+
+.home ul>li {
+    align-items: center;
+    margin-left: 1rem;
+    list-style-type: none;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+.playlist ul>li {
+    list-style-type: none;
+    opacity: 50%;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+.playlist ul span {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+
+.home ul #cerca, .home ul>li:last-child  {
+    opacity: 50%;
+}
+
+.account-name hr {
+    width: 80%;
+    opacity: 15%;
+    height: 0px;
+    margin: 0.5rem 0;
+}
+
+.account-name #installa {
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+
+.account-name #name {
+    font-size: 0.9rem;
 }
 
 /* MAIN */
@@ -199,6 +242,17 @@ footer {
 
     }
 
+    div.evidence ul>li{
+        font-size: 0.6rem;
+        
+    }
+    div.evidence ul {
+        margin-right: 2.5rem;
+        width: 100%;
+    }
+
+   
+
  
 
 }
@@ -207,7 +261,37 @@ footer {
     .cards-container  .card, .for-you-container .for-you-card {
         width: calc((100% / 2) - 2.5rem);
     }
+
+
+    .cards {
+        justify-content: center;
+    }
+
+   .card img {
+    width: 100%;
+   }
+
+   .for-you-cards {
+    justify-content: center;
+   }
+
+   .for-you-card img {
+    width: 100%;
+   }
+
+   .cards-title h2, .for-you-cards-title h2, .for-you-cards-title p {
+    margin-left: 1.5rem;
+   }
+
+   div.evidence ul {
+    width: 100%;
+    text-align: center;
 }
+
+   
+}
+
+
 
 
 @media screen and (max-width: 480px) {
@@ -216,18 +300,44 @@ footer {
     }
 
     main {
-        width: calc((100% - 50px) - 1.5rem);
+        width: calc(100% - 50px);
     }
 
-   .cards {
-    margin-right: 1.5rem;
+    .cards {
+        justify-content: center;
+    }
+
+   .card img {
+    width: 100%;
    }
 
-   .card {
-    width: 50%;
+   .for-you-cards {
+    justify-content: center;
    }
 
-   .card h3, .card p {
-    margin-left: 2rem;
+   .for-you-card img {
+    width: 100%;
    }
+
+   .cards-title h2, .for-you-cards-title h2, .for-you-cards-title p {
+    margin-left: 1.5rem;
+   }
+
+   div.evidence ul {
+    width: 100%;
+    text-align: center;
+   }
+
+   #big-logo {
+    display: none;
+   }
+
+   
+
+
+
+
+
+   
+   
 }

@@ -7,9 +7,12 @@
     <title>Spotify</title>
 
     <link rel="stylesheet" href="./css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
 
@@ -18,29 +21,34 @@
         <!-- HEADER -->
         
         <header>
-            <div class="logo">
+            <div class="logo flex">
+                <img id="big-logo" src="./img/logo.svg" alt="big-logo">
+               
             </div>
-            <div class="home">
+            <div class="home flex">
                 <ul>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
+                    <li> <span><i class="fa-solid fa-house"></i></span> Home</li>
+                    <li id="cerca"> <span><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span> Cerca</li>
+                    <li> <span><i class="fa-solid fa-bars"></i></span> La tua libreria</li>
                 </ul>
             </div>
             <div class="playlist">
+                <h3>Playlist</h3>
                 <ul>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
+                    <li> <span><i class="fa-sharp fa-solid fa-square-plus"></i></span> Crea Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
                 </ul>
             </div>
             <div class="account-name">
-
+               
+                <p id="installa"> <span><i class="fa-sharp fa-solid fa-circle-down"></i></span> Installa app</p>
+                <hr>
+                <p id="name"> <span><i class="fa-solid fa-user"></i></span> Simone Presti</p>
             </div>
         </header>
 
