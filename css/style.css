@@ -114,13 +114,16 @@ div.evidence ul>li {
 
 
 .card, .for-you-card {
-    border: 1px solid black;
     width: calc((100%/6) - 2rem);
-    height: 230px;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -152,9 +155,11 @@ footer {
         margin-top: 1rem;
         margin-bottom: 1rem;
         margin-left: 0.5rem;
+    }
 
+    .card img {
+       width: 120%;
 
-        
     }
 
  
@@ -174,6 +179,12 @@ footer {
     }
 
     main {
-        width: calc(100% - 50px);
+        width: calc((100% - 50px) - 1rem);
     }
+
+    .cards {
+        margin-right: 1rem;
+    }
+
+
 }
