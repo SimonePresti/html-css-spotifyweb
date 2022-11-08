@@ -233,7 +233,13 @@ footer {
 /* RESPONSIVE */
 
 
+/* MEDIA LARGE */
 
+@media screen and (min-width: 768px) {
+    #logo-small {
+        display: none;
+    }
+}
 
 /* MEDIA MEDIUM */
 
@@ -265,8 +271,9 @@ footer {
         width: 100%;
     }
 
-   
-
+    #logo-small {
+        display: none;
+    }
  
 
 }
@@ -305,10 +312,7 @@ footer {
     text-align: center;
 }
 
-   
 }
-
-
 
 /* MEDIA EXTRA SMALL */
 
@@ -384,11 +388,9 @@ footer {
 
    }
 
+   #logo-small {
+    display: inline;
+   }
 
-
-
-
-
-   
    
 }
