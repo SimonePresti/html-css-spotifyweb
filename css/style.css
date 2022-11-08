@@ -69,6 +69,11 @@ div.account-name {
     line-height: 2rem;
 }
 
+.home ul>li a, .account-name a, .playlist a {
+    text-decoration: none;
+    color: white;
+}
+
 .playlist ul>li {
     list-style-type: none;
     opacity: 50%;
@@ -103,6 +108,8 @@ div.account-name {
     opacity: 50%;
     font-size: 0.8rem;
 }
+
+
 
 /* MAIN */
 
@@ -228,6 +235,7 @@ footer {
 
 
 
+/* MEDIA MEDIUM */
 
 @media screen and (max-width: 768px) {
     .cards-container  .card {
@@ -262,6 +270,9 @@ footer {
  
 
 }
+
+
+/* MEDIA SMALL */
 
 @media screen and (max-width: 576px) {
     .cards-container  .card, .for-you-container .for-you-card {
@@ -299,6 +310,7 @@ footer {
 
 
 
+/* MEDIA EXTRA SMALL */
 
 @media screen and (max-width: 480px) {
     header {
@@ -339,6 +351,39 @@ footer {
    }
 
    
+   .home ul>li a, .account-name a, .playlist a, .playlist h3, .playlist span, hr {
+    display: none;
+   }
+
+   .home ul li>img {
+    margin-bottom:0.8rem;
+   }
+
+   div.logo {
+    height: 35px;
+   }
+
+   .home, .logo {
+    justify-content: center;
+   }
+
+   div.account-name {
+    margin: 0;
+    margin-top: 11rem;
+    text-align: center;
+
+   }
+
+   .account-name p {
+    margin-top: 2rem;
+
+   }
+
+   .home ul>li {
+    margin: 0;
+
+   }
+
 
 
 
