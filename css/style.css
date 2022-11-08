@@ -57,6 +57,10 @@ div.account-name {
     margin-left: 1rem
 }
 
+.logo img:last-child {
+    width: 1.5rem;
+}
+
 .home ul>li {
     align-items: center;
     margin-left: 1rem;
@@ -89,13 +93,15 @@ div.account-name {
     margin: 0.5rem 0;
 }
 
-.account-name #installa {
-    opacity: 50%;
-    font-size: 0.8rem;
+
+.home img, .account-name img {
+    width: 1.5rem;
+    vertical-align: middle ;
 }
 
-.account-name #name {
-    font-size: 0.9rem;
+.account-name p:first-child {
+    opacity: 50%;
+    font-size: 0.8rem;
 }
 
 /* MAIN */
