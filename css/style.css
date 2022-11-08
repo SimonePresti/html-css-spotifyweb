@@ -8,6 +8,14 @@
     display: flex;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 .flex {
     flex-wrap: wrap;
 }
@@ -43,14 +51,20 @@ div.playlist {
     height: 220px;
     align-items: center;
     margin-left: 1rem;
+    margin-bottom: 10rem;
 }
 
 div.account-name {
     width: 100%;
-    align-items: center;
-    margin-top: 9rem;
+    margin-bottom: 2rem;
+
+}
+
+div.account-name hr {
+    margin: 0.2rem 0;
     margin-left: 1rem;
 }
+
 
 #big-logo {
     width: 60%;
@@ -69,6 +83,7 @@ div.account-name {
     line-height: 2rem;
 }
 
+
 .home ul>li a, .account-name a, .playlist a {
     text-decoration: none;
     color: white;
@@ -79,6 +94,9 @@ div.account-name {
     opacity: 50%;
     font-size: 0.8rem;
     line-height: 2rem;
+}
+.playlist ul>li:hover, div.home ul>li:hover,.home ul #cerca:hover, .account-name p:first-child:hover{
+    opacity: 100%;
 }
 
 .playlist ul span {
@@ -95,7 +113,11 @@ div.account-name {
     width: 80%;
     opacity: 15%;
     height: 0px;
-    margin: 0.5rem 0;
+    margin-left: 1rem;
+}
+
+.account-name p {
+    margin-left: 1rem;
 }
 
 
@@ -143,6 +165,11 @@ section.top-container {
     margin-right: 1rem;
 }
 
+.top-container button:hover {
+    width: 14rem;
+    height: 3.5rem;
+}
+
 /* SECTION EVIDENCE */
 
 section.evidence-container {
@@ -154,9 +181,14 @@ section.evidence-container {
 
 div.evidence ul>li {
     color: white;
-    opacity: 70%;
+    opacity: 50%;
     display: inline;
     margin-left: 1.5rem;
+}
+
+div.evidence li:hover {
+    color: white;
+    opacity: 100%;
 }
 
 
@@ -200,6 +232,10 @@ div.evidence ul>li {
     margin-bottom: 1rem;
 }
 
+.radius {
+    border-radius: 100%;
+}
+
 .card img, .for-you-card img {
     width: 100%;
 }
@@ -216,6 +252,16 @@ div.evidence ul>li {
     text-align: center;
     font-size: 0.6rem;
     opacity: 50%;
+}
+
+.card img:hover, .for-you-card:hover {
+    opacity: 50%;
+}
+
+div.cards:hover #play  {
+    width: 4rem;
+    opacity: 100%;
+
 }
 
 
@@ -238,6 +284,10 @@ footer {
 @media screen and (min-width: 768px) {
     #logo-small {
         display: none;
+    }
+
+    #play {
+        opacity: 0;
     }
 }
 
@@ -274,7 +324,10 @@ footer {
     #logo-small {
         display: none;
     }
- 
+
+    #play {
+        opacity: 0;
+    }
 
 }
 
@@ -310,6 +363,10 @@ footer {
    div.evidence ul {
     width: 100%;
     text-align: center;
+}
+
+#play {
+    opacity: 0;
 }
 
 }
@@ -371,17 +428,15 @@ footer {
     justify-content: center;
    }
 
+   .home {
+    margin-bottom: 2rem;
+   }
+
    div.account-name {
     margin: 0;
-    margin-top: 11rem;
-    text-align: center;
 
    }
 
-   .account-name p {
-    margin-top: 2rem;
-
-   }
 
    .home ul>li {
     margin: 0;
@@ -391,6 +446,8 @@ footer {
    #logo-small {
     display: inline;
    }
-
+   #play {
+    opacity: 0;
+}
    
 }

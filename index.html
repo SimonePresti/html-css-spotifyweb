@@ -20,7 +20,7 @@
         
         <!-- HEADER -->
         
-        <header>
+        <header class="flex">
             <div class="logo flex">
                 <img id="big-logo" src="./img/logo.svg" alt="big-logo">
                 <img id="logo-small" src="./img/logo-small.svg" alt="small-logo">
@@ -29,7 +29,7 @@
             <div class="home flex">
                 <ul>
                     <li> <img src="./img/home.svg" alt="home"> <a href="home">Home</a></li>
-                    <li > <img src="./img/search.svg" alt="search"> <a href="Cerca">Cerca</a> </li>
+                    <li id="cerca" > <img src="./img/search.svg" alt="search"> <a href="Cerca">Cerca</a> </li>
                     <li> <img src="./img/libreria.svg" alt="library"> <a href="Libreria">La Tua Libreria</a> </li>
                 </ul>
             </div>
@@ -45,7 +45,7 @@
                     
                 </ul>
             </div>
-            <div class="account-name">
+            <div class="account-name flex">
                 <p > <img src="./img/download.svg" alt="download"> <a href="installa">Installa App</a></p>
                 <hr>
                 <p > <img src="./img/profile.svg" alt="profile"> <a href="simone">Simone Presti</a></p>
@@ -83,9 +83,12 @@
                 <div class="cards-title">
                     <h2>Recently Played</h2>
                 </div>
-                <div class="cards flex">
-                    <div class="card">
-                        <img src="./img/metal_lifting.jpg" alt="metallica">
+                <div class="cards flex" >
+                    <div class="card relative">
+                            <img src="./img/metal_lifting.jpg" alt="metallica">
+                        <div class="absolute flex">
+                            <img id="play" src="./img/ic_play_circle_filled_white_48px-512.webp" alt="play">
+                        </div>
                         <h3>Heavy Metal</h3>
                         <p>Subtitle</p>
                     </div>
@@ -142,11 +145,11 @@
                 </div>
                 <div class="for-you-cards flex">
                     <div class="for-you-card">
-                        <img src="./img/youg.jpeg" alt="lana">
+                        <img class="radius" src="./img/youg.jpeg" alt="lana">
                         <h3>Lana Del Rey</h3>
                     </div>
                     <div class="for-you-card">
-                        <img src="./img/einaudi.jpeg" alt="einaudi">
+                        <img class="radius" src="./img/einaudi.jpeg" alt="einaudi">
                         <h3>Ludovico einaudi</h3>
                     </div>
                 </div>
