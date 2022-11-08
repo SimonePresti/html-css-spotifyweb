@@ -46,6 +46,10 @@ div.home {
     align-items: center;
 }
 
+div.home li:first-child {
+    border-left: 3px solid limegreen;
+}
+
 div.playlist {
     width: 100%;
     height: 220px;
@@ -56,13 +60,6 @@ div.playlist {
 
 div.account-name {
     width: 100%;
-    margin-bottom: 2rem;
-
-}
-
-div.account-name hr {
-    margin: 0.2rem 0;
-    margin-left: 1rem;
 }
 
 
@@ -112,8 +109,7 @@ div.account-name hr {
 .account-name hr {
     width: 80%;
     opacity: 15%;
-    height: 0px;
-    margin-left: 1rem;
+    margin: 0.2rem 1rem;
 }
 
 .account-name p {
@@ -129,6 +125,13 @@ div.account-name hr {
 .account-name p:first-child {
     opacity: 50%;
     font-size: 0.8rem;
+}
+
+.account-name p:last-child img {
+    background-color: #808080;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
 }
 
 
@@ -194,6 +197,10 @@ div.evidence ul li>a {
 div.evidence li:hover {
     color: white;
     opacity: 100%;
+}
+
+.evidence ul>li:first-child {
+    border-bottom: 2px solid limegreen;
 }
 
 
@@ -285,6 +292,51 @@ footer {
     background-color: #242424;
     height: 80px;
     width: 100%;
+    justify-content: space-between;
+}
+
+.footer-left {
+    border: 1px solid white;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+}
+
+.footer-left img {
+    width: 3.5rem;
+    margin-left: 1rem;
+}
+
+.footer-left p:first-child {
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.footer-left p:last-child {
+    color: white;
+    opacity: 40%;
+    font-size: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+}
+
+.footer-icon-left span {
+    filter: invert(100%);
+    margin-left: 0.5rem;
+    opacity: 40%;
+}
+
+.footer-central {
+    border: 1px solid white;
+    height: 100%;
+    width: 40%;
+}
+
+.footer-right {
+    border: 1px solid white;
+    height: 100%;
+    width: 20%;
 }
 
 
