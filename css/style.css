@@ -296,7 +296,6 @@ footer {
 }
 
 .footer-left {
-    border: 1px solid white;
     height: 100%;
     width: 20%;
     align-items: center;
@@ -327,16 +326,101 @@ footer {
     opacity: 40%;
 }
 
+.footer-icon-left span:hover {
+    opacity: 100%;
+}
+
+.footer-left p:last-child:hover {
+    opacity: 100%;
+}
+
 .footer-central {
-    border: 1px solid white;
     height: 100%;
     width: 40%;
 }
 
-.footer-right {
+.footer-central-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.footer-central-down {
     border: 1px solid white;
+    width: 70%;
+    height: 5px;
+    border-radius: 3rem;
+    opacity: 50%;
+    margin-left: 5.5rem;
+}
+
+.footer-central-down-inside {
+    border: 1px solid white;
+    background-color: white;
+    width: 30%;
+    border-radius: 3rem;
+}
+
+.footer-central-down-inside:hover {
+    background-color: limegreen;
+    border: 1px solid limegreen;
+    opacity: 100%;
+}
+.footer-central-container:first-child {
+    align-items: flex-end;
+}
+
+.footer-central-up {
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.footer-central-up span {
+    margin-left: 1rem;
+    filter: invert(100%);
+}
+
+.play-footer {
+    font-size: 1.5rem;
+}
+
+.footer-right {
+
     height: 100%;
     width: 20%;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer-right span {
+    margin-right: 1rem;
+    filter: invert(100%);
+
+}
+
+.footer-right-small {
+    border: 1px solid white;
+    width: 30%;
+    height: 5px;
+    border-radius: 3rem;
+    margin-right: 1rem;
+    opacity: 50%;
+}
+
+.footer-right-small-inside {
+    background-color: white;
+    border: 1px solid white;
+    width: 20%;
+    height: 3px;
+    border-radius: 3rem;
+    opacity: 50%;
+}
+
+.footer-right-small-inside:hover {
+    background-color: limegreen;
+    border: 1px solid limegreen;
+    opacity: 100%;   
 }
 
 
