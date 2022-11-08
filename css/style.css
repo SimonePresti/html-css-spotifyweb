@@ -180,11 +180,16 @@ section.evidence-container {
 }
 
 div.evidence ul>li {
-    color: white;
     opacity: 50%;
     display: inline;
     margin-left: 1.5rem;
 }
+
+div.evidence ul li>a {
+    text-decoration: none;
+    color: white;
+}
+
 
 div.evidence li:hover {
     color: white;
@@ -255,16 +260,23 @@ div.evidence li:hover {
 }
 
 .card img:hover, .for-you-card:hover {
-    opacity: 50%;
+    opacity: 40%;
 }
 
-div.cards:hover #play  {
-    width: 4rem;
+.card:hover .layover span {
     opacity: 100%;
-
 }
 
 
+
+.layover span {
+    opacity: 0%;
+    filter: invert(100%);
+    font-size: 3rem;
+    position: absolute;
+    top: 25%;
+    left: 37%;
+}
 
 
 /* FOOTER */
@@ -329,6 +341,16 @@ footer {
         opacity: 0;
     }
 
+    .layover span {
+        opacity: 0%;
+        filter: invert(100%);
+        font-size: 3rem;
+        position: absolute;
+        top: 10%;
+        left: 37%;
+    }
+    
+
 }
 
 
@@ -367,6 +389,15 @@ footer {
 
 #play {
     opacity: 0;
+}
+
+.layover span {
+    opacity: 0%;
+    filter: invert(100%);
+    font-size: 3rem;
+    position: absolute;
+    top: 15%;
+    left: 30%;
 }
 
 }
