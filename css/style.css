@@ -281,7 +281,7 @@ div.evidence li:hover {
     filter: invert(100%);
     font-size: 3rem;
     position: absolute;
-    top: 25%;
+    top: 23%;
     left: 37%;
 }
 
@@ -296,7 +296,6 @@ footer {
 }
 
 .footer-left {
-    height: 100%;
     width: 20%;
     align-items: center;
 }
@@ -335,13 +334,11 @@ footer {
 }
 
 .footer-central {
-    height: 100%;
     width: 40%;
 }
 
 .footer-central-container {
     width: 100%;
-    height: 100%;
     justify-content: center;
 }
 
@@ -386,8 +383,6 @@ footer {
 }
 
 .footer-right {
-
-    height: 100%;
     width: 20%;
     align-items: center;
     justify-content: end;
@@ -485,7 +480,32 @@ footer {
         top: 10%;
         left: 37%;
     }
+
+    .footer-icon-left {
+        font-size: 0.7rem;
+    }
+
+    .footer {
+    }
+
+    .footer-central-up, .footer-central-down {
+        width: 100%;
+        margin: 0;
+        margin: 0.5rem;
+    }
+
+    .footer-icon-left {
+        width: 20%;
+        margin: 0;
+    }
     
+    .footer-left img {
+        width: 1rem;
+    }
+
+    .footer-right span {
+        font-size: 0.7rem;
+    }
 
 }
 
@@ -615,6 +635,15 @@ footer {
    }
    #play {
     opacity: 0;
+}
+
+.layover span {
+    opacity: 0%;
+    filter: invert(100%);
+    font-size: 3rem;
+    position: absolute;
+    top: 21%;
+    left: 34%;
 }
    
 }
